@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8192</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/styling.css" />
+  <link rel="stylesheet" href="css/mobiletimeline.css" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    // ===== wow js
+    new WOW().init();
+  </script>
+  <script defer src="js/alpine.min.js"></script>
+
+  <script>
+    document.addEventListener('contextmenu', function (e) { e.preventDefault(); e.stopPropagation(); });
+    document.addEventListener('copy', function (e) { e.preventDefault(); e.stopPropagation(); });
+    document.addEventListener('cut', function (e) { e.preventDefault(); e.stopPropagation(); });
+  </script>
+  <style>
+    .jw-album-image img,
+    .jw-element-image img {
+      pointer-events: none;
+      -webkit-touch-callout: none;
+    }
+
+    .pswp__share-tooltip .pswp__share--download {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="a0" x-data="
+      {
+        scrolledFromTop: false
+      }
+    " x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+  @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false">
+  <header x-data="
+        {
+          navbarOpen: false,
+          submenuOpen: false
+        }
+      " class="header a1 a2 a3 a4 a5 a6 a7 a8" :class="scrolledFromTop ? 'a9 aa ab ac ad' : ' a9' ">
+    <div class="ae">
+      <div class="af ag[-16px] a3 a5 ah">
+        <div class="ai aj ak">
+          <a href="index.html" class="header-logo al a4" :class="scrolledFromTop ? 'am lg:an' : 'ao lg:ap' ">
+            <img src="images/8192.png" alt="logo" class="aq aj" />
+          </a>
+        </div>
+        <div class="a3 a4 a5 ah ak">
+          <div>
+            <button @click="navbarOpen = !navbarOpen " :class="navbarOpen && 'navbarTogglerActive' " id="navbarToggler"
+              name="navbarToggler" aria-label="navbarToggler"
+              class="ar as at/2 al au[-50%] av aw ax[6px] ay focus:az lg:aA">
+              <span :class="navbarOpen && 'aB aC aD[7px]' " class="af aE[6px] al aF[2px] aG[30px] aH"></span>
+              <span :class="navbarOpen && 'aI' " class="af aE[6px] al aF[2px] aG[30px] aH"></span>
+              <span :class="navbarOpen && 'aD[-8px] aJ[135deg]' " class="af aE[6px] al aF[2px] aG[30px] aH"></span>
+            </button>
+            <nav :class="!navbarOpen && 'aA' " id="navbarCollapse"
+              class="ar as aK a4 aL[250px] av aM aN lg:aO lg:al lg:a4 lg:aj lg:a6 aP lg:aQ lg:ak lg:aR xl:aS">
+              <ul class="aT lg:a3">
+                <li class="aU af">
+                  <a href="index.html" class="aV a3 an aW aX aZ group-hover:aZ lg:a_ lg:a10 lg:a11 lg:a12">
+                    Home
+                  </a>
+                </li>
+                <li class="aU af">
+                  <a href="#features"
+                    class="aV a3 an aW aX aY[#bababa] group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a12 xl:a14">
+                    Features
+                  </a>
+                </li>
+                <li class="aU af">
+                  <a href="#about"
+                    class="aV a3 an aW aX aY[#bababa] group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a12 xl:a14">
+                    About
+                  </a>
+                </li>
+
+                <li class="aU af">
+                  <a href="#faq" rel="nofollow"
+                    class="aV a3 an aW aX aY[#bababa] group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a12 xl:a14">
+                    FAQ
+                  </a>
+                </li>
+                <li class="aU af">
+                  <a href="#" target="_blank" rel="nofollow"
+                    class="aV a3 an aW aX aY[#bababa] group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a12 xl:a14">
+                    Chart
+                  </a>
+                </li>
+
+
+
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="aA a1p a1q sm:a3 lg:a1r">
+            <div class="aU af aA md:a3">
+              <div
+                class="a1k ar aD[110%] a1e aG[250px] a1f aa a1v aI a1w group-hover:a1l group-hover:aK group-hover:a1j">
+
+              </div>
+            </div>
+            <a href="https://t.me/ETH8192" target="blank" class="button-89"> Telegram </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="af a2o a2p a38 a39 a3a a1E[150px] a1F">
+
+    <div class="ae">
+      <div class="a1R a3 a1S a5">
+        <div class="a4 ak lg:a1T/2">
+          <div class="a2w aL[570px] lg:a2x">
+            <h1
+              class="a1M aY[40px] a1O a1P aZ md:aY[50px] lg:aY[40px] xl:aY[46px] 2xl:aY[50px] sm:text-[46px]  extraglow">
+              <span class="extra">8192</span> - True Scarcity
+            </h1>
+            <p class="a2e a1Q a1o a3c a1t md:a3d" style="color: #ffffff;">
+              This token embodies true scarcity with a unique burn mechanism that directly impacts its value and
+              distribution.
+            </p>
+            <p class="a2e a1Q a1o a3c a1t md:a3d" style="font-size: 0.75em; color: #ffffff;"><span style="background-image: linear-gradient(
+              45deg,
+              #ff0000 0%,
+              #f43a3a 51%,
+              #f15454 100%
+            ); padding: 1px 10px; border-radius: 5px;">CA:</span>0xa615325a99C40B015450aB29A058C00F149029FA </p>
+            <div class="flex flex-wrap items-center marb">
+              <a href="https://x.com/8192eth" target="_blank" class="button-87"> Twitter </a>
+              <a href="https://t.me/ETH8192" target="_blank" class="button-88 content-evenly">
+                Telegram ->
+              </a> <br><br><br>
+              <!-- <a href="#htb" class="button-90 content-evenly">
+                🙋 &nbsp; How to Buy
+              </a> <br> <br> <br> -->
+
+            </div>
+          </div>
+        </div>
+        <div class="a4 ak lg:a1T/2">
+          <div class="a1L">
+            <img src="./images/hero.jpeg" alt="hero image" class="a1J hiddenm aj" />
+            <!-- <iframe id="dextools-widget" title="DEXTools Trading Chart"
+              src="https://www.dextools.io/widget-chart/en/ether/pe-light/0xa615325a99C40B015450aB29A058C00F149029FA?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section id="features" class="a1E[90px]">
+    <div class="ae">
+      <div class="a1J a1K aL[650px] a1L">
+        <h2 class="a1M a1N extra a1O a1P aZ sm:aY[42px]"> Features</h2>
+        <p class="a1Q a1o a1t" style="color: #ffffff;">
+          8192 is not your typical token. We are here to innovate.
+        </p>
+      </div>
+      <div class="a1R a3 a1S">
+        <div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
+          <div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH bshadow">
+            <!-- <div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_">
+              <img src="./images/img.png" alt="" />
+            </div> -->
+            <h3 class="a21 a22 a1O aZ a7 group-hover:a23">
+              Unique Token Supply
+            </h3>
+            <p class="aW a1o a1t">
+              The project introduces a strictly limited supply of only 8192 tokens, with no fractional units allowed.
+              This means only whole tokens can be traded, such as 1, 5, or 80 tokens, enhancing the token's exclusivity
+              and rarity. The prohibition of fractional trading ensures that each transaction involves significant whole
+              units, adding to the token's unique appeal.
+            </p>
+          </div>
+        </div>
+        <div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
+          <div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH bshadow">
+            <!-- <div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20">
+              <img src="./images/img2.png" alt="" />
+            </div> -->
+            <h3 class="a21 a22 a1O aZ a7 group-hover:a23">
+              Zero Buy Tax, Strategic Sell Tax
+            </h3>
+            <p class="aW a1o a1t">
+              The tokenomics feature a 0% tax on purchases to encourage accumulation, coupled with a 5% tax on sales.
+              Out of the sell tax, 4% is allocated for burning, creating a deflationary effect. The absence of
+              fractional units means that this sell tax applies only to trades involving 20 or more tokens, ensuring
+              meaningful contributions to the token's scarcity.
+            </p>
+          </div>
+        </div>
+        <div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
+          <div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH bshadow">
+            <!-- <div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20">
+              <img src="./images/img3.png" alt="" />
+            </div> -->
+            <h3 class="a21 a22 a1O aZ a7 group-hover:a23">Automated Burn Mechanism</h3>
+            <p class="aW a1o a1t">
+              A distinctive feature of this token is its automated burn mechanism, which operates based on specific
+              triggers related to the liquidity pool (LP) balance and transaction volume. For every 2nd, 4th, 8th, 16th,
+              and 32nd sale, one token is burned if the LP balance exceeds predefined thresholds, ranging from 8192 to
+              256 tokens. Additionally, one token is removed from the LP every 8 hours or after 1024 tokens are traded,
+              provided the LP balance exceeds 256 tokens, further reducing the supply.
+            </p>
+          </div>
+        </div>
+        <div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
+          <div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH bshadow">
+            <!-- <div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20">
+              <img src="./images/icon3.png" alt="" />
+            </div> -->
+            <h3 class="a21 a22 a1O aZ a7 group-hover:a23">Narrative of True Scarcity</h3>
+            <p class="aW a1o a1t">
+              The concept of "True Scarcity" is central to this project, with a strictly limited supply and unique burn
+              mechanisms. This narrative positions the token as a rare and valuable asset. The continuous burning of
+              tokens creates urgency and exclusivity, appealing to investors seeking a truly scarce cryptocurrency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="a2L a1I[60px]">
+    <div class="ae">
+      <div class="a2w a3l a1z a3m">
+        <div class="a1J a1K aL[650px] a1L">
+          <br />
+          <br />
+          <br />
+          <h2 class="a1M a1N extra a1O a1P aZ sm:aY[42px]" id="about">
+            About 8192
+          </h2>
+          <p class="a1Q a1o a1t">
+            8192 boasts unique and innovative utility.
+          </p>
+        </div>
+      </div>
+      <div class="a1R a3 a1S">
+        <div class="a2 ak lg:a1T/2">
+          <div class="a1V a1W a1G aM a3t md:a1X lg:a2t xl:a1X">
+            <br>
+            <!-- <img src="./images/hero/home1.png" width="250" style="margin-bottom: 20px;" alt="" class="hiddenm" /> -->
+            <img src="./images/cover3.png" class="hiddenm" alt="" />
+            </p>
+            <div class="a2D a3 a5 ah">
+              <h1 class="a2 a1O aZ">Abstract</h1>
+            </div>
+            <p class="aW a1o a1t">
+              At 8192 - True Scarcity, we are redefining the concept of digital assets with a focus on exclusivity,
+              value, and rarity. Our project is built on the foundation of creating a truly scarce cryptocurrency, with
+              only 8192 tokens in existence. We believe in the power of scarcity to drive value, and our unique
+              tokenomics and burn mechanisms are designed to ensure that our token remains a rare and coveted asset.
+
+              Our mission is to provide a secure, transparent, and innovative platform for token holders and investors.
+              We aim to cultivate a community that understands and appreciates the intrinsic value of true scarcity. By
+              limiting the total supply of our tokens and prohibiting fractional trading, we have created a unique
+              market environment where each token holds significant value. This not only enhances the token's
+              exclusivity but also ensures that every transaction is meaningful and impactful.
+
+              The cornerstone of our project is our innovative burn mechanism. Unlike other cryptocurrencies, our tokens
+              are not only scarce by design but also actively reduced in supply through systematic burning. For every
+              2nd, 4th, 8th, 16th, and 32nd sale, a token is burned if the liquidity pool (LP) balance exceeds specific
+              thresholds. Additionally, every 8 hours or after 1024 tokens are traded, another token is removed from the
+              LP if its balance exceeds 256 tokens. This continuous reduction in supply creates a deflationary effect,
+              enhancing the token's value over time.
+          </div>
+        </div>
+        <div class="a2 ak lg:a1T/2">
+          <div class="a1V a1W a1G aM a3t md:a1X lg:a2t xl:a1X">
+            <br>
+            <div class="a2D a3 a5 ah">
+              <!-- <h1 class="a2 a1O aZ">The Best Defi Charting hub</h1> -->
+            </div>
+            <p class="aW a1o a1t">
+              We have structured our tokenomics to benefit our community members. With a 0% buy tax, we encourage
+              accumulation, allowing investors to acquire tokens without incurring additional costs. The 5% sell tax,
+              with 4% allocated for burning, serves as a deflationary measure to decrease the circulating supply. This
+              design not only supports the token's value appreciation but also rewards long-term holders who believe in
+              the project's vision.
+
+              At 8192 - True Scarcity, we are committed to maintaining transparency and security. We provide regular
+              updates to our community and ensure that all transactions and operations are conducted with the highest
+              level of integrity. Our team of experienced professionals is dedicated to developing and maintaining a
+              platform that meets the highest standards of quality and reliability.
+
+              We believe that the future of digital assets lies in scarcity and exclusivity. By creating a token with a
+              limited supply and innovative burn mechanisms, we offer a unique investment opportunity that stands out in
+              the crowded cryptocurrency market. Our project is not just about trading; it's about creating value,
+              fostering a community, and shaping the future of digital assets.
+            </p>
+
+            <img src="./images/cover3.png" class="hiddenm" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="a35" id="faq">
+    <div class="a1J a1K aL[650px] a1L">
+      <br>
+      <h2 class="a1M a1N extra a1O a1P aZ sm:aY[42px]" id="htb">
+        FAQ
+      </h2>
+      <p class="a1Q a1o a1t">
+      <div class="faq-content">Here are questions frequently asked by the community. To gain full understanding of the
+        project, read the <a href="#">whitepaper</a>.</div>
+      </p>
+    </div>
+
+
+    <div class="content-wp">
+
+      <div class="accordion-content">
+
+        <div class="accordion-item">
+          <header class="item-header">
+            <h4 class="item-question">
+              What is 8192 - True Scarcity?
+            </h4>
+            <div class="item-icon">
+              <i class='bx bx-chevron-down'></i>
+            </div>
+          </header>
+          <div class="item-content">
+            <p class="item-answer">
+              8192 - True Scarcity is a cryptocurrency project that emphasizes true scarcity by offering a limited
+              supply of only 8192 tokens. Our project prohibits fractional trading, ensuring that only whole tokens can
+              be traded. This creates a unique market environment where each token holds significant value.
+              Additionally, we have implemented innovative burn mechanisms to continuously reduce the token supply,
+              enhancing its rarity and value over time.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <header class="item-header">
+            <h4 class="item-question">
+              How does the burn mechanism work?
+            </h4>
+            <div class="item-icon">
+              <i class='bx bx-chevron-down'></i>
+            </div>
+          </header>
+          <div class="item-content">
+            <p class="item-answer">
+              Our burn mechanism is designed to reduce the total supply of tokens systematically. For every 2nd, 4th,
+              8th, 16th, and 32nd sale, a token is burned if the liquidity pool (LP) balance exceeds specific thresholds
+              (8192, 4096, 2048, 1024, 512, and 256 tokens). Additionally, every 8 hours or after 1024 tokens are
+              traded, one token is removed from the LP if its balance exceeds 256 tokens. This process ensures that the
+              token supply decreases continuously, increasing scarcity and potential value.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <header class="item-header">
+            <h4 class="item-question">
+              What are the tax implications for buying and selling the token?
+            </h4>
+            <div class="item-icon">
+              <i class='bx bx-chevron-down'></i>
+            </div>
+          </header>
+          <div class="item-content">
+            <p class="item-answer">
+              There is a 0% tax on buying tokens, which encourages accumulation without additional costs. However, there
+              is a 5% tax on selling tokens, of which 4% is allocated for burning. This means that when you sell tokens,
+              4% of the total sale amount will be burned, reducing the circulating supply and potentially increasing the
+              token's value. It's important to note that the sell tax only applies to transactions involving 20 or more
+              tokens, due to the absence of fractional units. </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <header class="item-header">
+            <h4 class="item-question">
+              Can I trade fractional units of the token?</h4>
+            <div class="item-icon">
+              <i class='bx bx-chevron-down'></i>
+            </div>
+          </header>
+          <div class="item-content">
+            <p class="item-answer">
+              No, fractional trading is not allowed in the 8192 - True Scarcity project. The tokenomics are designed to
+              trade only whole tokens, such as 1, 5, or 80 tokens. This rule ensures that each transaction involves
+              significant whole units, contributing to the token's exclusivity and rarity. The prohibition of fractional
+              units also aligns with our commitment to true scarcity, as it prevents the dilution of value that can
+              occur with fractional trading.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <header class="item-header">
+            <h4 class="item-question">
+              How can I participate in the 8192 - True Scarcity project?
+            </h4>
+            <div class="item-icon">
+              <i class='bx bx-chevron-down'></i>
+            </div>
+          </header>
+          <div class="item-content">
+            <p class="item-answer">
+              To participate in the 8192 - True Scarcity project, you can start by acquiring tokens through our platform
+              or supported exchanges. We encourage new investors to join our community by following us on social media
+              and staying updated with the latest news and developments. You can also engage with other community
+              members and participate in discussions to learn more about our project and its unique features. As we
+              continue to develop and expand, there will be more opportunities for you to get involved and contribute to
+              the project's growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <script>
+    const accordionBtns = document.querySelectorAll(".item-header");
+
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("active");
+
+        let content = this.nextElementSibling;
+        console.log(content);
+
+        if (content.style.maxHeight) {
+          //this is if the accordion is open
+          content.style.maxHeight = null;
+        } else {
+          //if the accordion is currently closed
+          content.style.maxHeight = content.scrollHeight + "px";
+          console.log(content.style.maxHeight);
+        }
+      };
+    });
+
+  </script>
+
+  <footer class=" a24 ">
+
+    <div class="ae">
+      <div class="a1R a3 a1S">
+
+        <div class="a4 ak sm:a25/12 lg:a26/12 xl:a27/12 ">
+          <div class="a28">
+            <div class="aL[300px]">
+
+              <a href="#" class="a29 a2a">
+                <img src="./images/8192.png" alt="logo" class="aq" />
+              </a>
+              <p class="a2b aW a1o a1t">
+                This token embodies true scarcity with a unique burn mechanism that directly impacts its value and
+                distribution.
+              </p>
+              <div class="a3 a5">
+
+                <a href="https://t.me/ETH8192" name="social-link" aria-label="social-link" class="a2c aZ hover:a1u">
+                  <i class='bx bxl-telegram'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a4 ak sm:a25/12 lg:a26/12 xl:a26/12">
+          <div class="a28">
+            <h2 class="a2e a2f a1O aZ">8192</h2>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" class="a1M a2a aW a1o a1t a7 hover:aZ">
+                  About 8192
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="a1M a2a aW a1o a1t a7 hover:aZ">
+                  Features
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="a4 ak sm:a25/12 lg:a26/12 xl:a18/12">
+          <div class="a28">
+            <h2 class="a2e a2f a1O aZ">Documentation</h2>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" class="a1M a2a aW a1o a1t a7 hover:aZ">
+                  Whitepaper
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="a2n a1G">
+        <div class="ap a1L">
+          <p class="aW a1o a1t">
+            &copy; Copyright 2024 - 8192. All rights reserved. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/tiny-slider.js"></script>
+  <script>
+    //======== tiny slider for clients
+    tns({
+      container: ".artists-slider",
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayButtonOutput: false,
+      mouseDrag: true,
+      gutter: 1,
+      nav: true,
+      navPosition: "bottom",
+      controls: false,
+      controlsText: [
+        '<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5.00001 0.0600594L5.00001 4.06006L13.92 4.06006L13.95 6.07006L5.00001 6.07006L5.00001 10.0601L1.19607e-05 5.06006L5.00001 0.0600594Z" fill="white"/></svg>',
+        '<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.99999 10.9399V6.93994H0.0799875L0.0499878 4.92994H8.99999V0.939941L14 5.93994L8.99999 10.9399Z" fill="white"/> </svg>',
+      ],
+      items: 1,
+      responsive: {
+        540: {
+          controls: true,
+          nav: false,
+        },
+        768: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+        1140: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+
+  <!-- <video id="background-video" autoplay loop muted poster="/">
+  <source src="./images/hero/hero2.mp4" type="video/mp4">
+  </video> -->
+
+  <style>
+    #background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @media (max-width: 750px) {
+      #background-video {
+        display: none;
+      }
+
+      body {
+        background-size: cover;
+      }
+    }
+  </style>
+</body>
+
+</html>
